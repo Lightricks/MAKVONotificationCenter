@@ -255,7 +255,7 @@ static char MAKVONotificationHelperMagicContext = 0;
                             keyPath:(id<MAKVOKeyPathSet>)keyPath
                            selector:(SEL)selector
                            userInfo:(id)userInfo
-                            options:(NSKeyValueObservingOptions)options;
+                            options:(NSKeyValueObservingOptions)options
 {
     if (!(options & MAKeyValueObservingOptionUnregisterManually))
     {
