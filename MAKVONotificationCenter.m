@@ -93,7 +93,8 @@ static char MAKVONotificationHelperMagicContext = 0;
         _options = options;
         
         // Pass only Apple's options to Apple's code.
-        options &= ~(MAKeyValueObservingOptionUnregisterManually);
+        options = (NSKeyValueObservingOptions)(options &
+                                               ~(MAKeyValueObservingOptionUnregisterManually));
         
         for (NSString *keyPath in _keyPaths)
         {
